@@ -1,0 +1,11 @@
+/* Dropdown Toggle Icon
+========================================================================= */
+
+.dropdown-toggle::after {
+    content: "\e92d";
+    font-family: "iconsax" !important;
+    display: inline-block;
+    vertical-align: bottom;
+    padding-right: 6px;
+    border: none
+}

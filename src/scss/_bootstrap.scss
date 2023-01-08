@@ -6,10 +6,11 @@
 //    2. Functions
 //    3. Variables
 //    4. Maps + Mixins
-//    5. Root + Reboot
-//    6. Type
-//    7. Components
-//    8. Helpers & Mixins for Breakpoints + Print
+//    5. Custom Utilities
+//    6. Root + Reboot
+//    7. Type
+//    8. Components
+//    9. Helpers & Mixins for Breakpoints + Print
 //
 //---------------------------------------------
 
@@ -33,7 +34,7 @@
 @import "~bootstrap/scss/variables";
 
 //---------------------------------------------
-// 4. Maps + Mixins
+// 4. Maps + Mixins + utilities
 //---------------------------------------------
 
 @import "~bootstrap/scss/maps";
@@ -41,20 +42,26 @@
 @import "~bootstrap/scss/utilities";
 
 //---------------------------------------------
-// 5. Root + Reboot
+// 5. Custom Utilities
+//---------------------------------------------
+
+@import "abstracts/utilities";
+
+//---------------------------------------------
+// 6. Root + Reboot
 //---------------------------------------------
 
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
 
 //---------------------------------------------
-// 6. Type
+// 7. Type
 //---------------------------------------------
 
 @import "~bootstrap/scss/type";
 
 //---------------------------------------------
-// 7. Components
+// 8. Components
 //---------------------------------------------
 
 @import "~bootstrap/scss/images";
@@ -87,7 +94,7 @@
 @import "~bootstrap/scss/placeholders";
 
 //---------------------------------------------
-// 8. Helpers & Mixins for Breakpoints + Print
+// 9. Helpers & Mixins for Breakpoints + Print
 //---------------------------------------------
 
 @import "~bootstrap/scss/helpers";

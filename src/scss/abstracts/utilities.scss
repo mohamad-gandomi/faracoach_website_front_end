@@ -1,0 +1,56 @@
+//---------------------------------------------
+//
+//  Utilities
+//
+//    1. Colors
+//    2. Text Colors
+//    2. Background Colors
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Colors
+//---------------------------------------------
+
+$custom-colors: (
+  "c6"   :   #c6c6c6,
+  "fa"   :   #fafafa,
+  "9f"   :   #9f9f9f,
+  "ae"   :   #aeaeae,
+);
+
+//---------------------------------------------
+// 1. Text Colors
+//---------------------------------------------
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "color": (
+        property: color,
+        class: text,
+        values: map-merge(
+          $theme-colors,
+          $custom-colors,
+        )
+    ),  
+  )
+);
+
+//---------------------------------------------
+// 2. Background Colors
+//---------------------------------------------
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "background-color": (
+      property: background-color,
+      class: bg,
+      values: map-merge(
+        $theme-colors,
+        $custom-colors,
+      )
+    ),
+  )
+);
