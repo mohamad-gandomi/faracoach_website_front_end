@@ -6,6 +6,7 @@
 //    2. Bootstrap Globals
 //    3. Bootstrap Colors
 //    4. Bootstrap Container Width
+//    5. Bootstrap Border Radius
 //
 //---------------------------------------------
 
@@ -50,3 +51,14 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1320px
 );
+
+//---------------------------------------------
+// 5. Bootstrap Border Radius
+//---------------------------------------------
+
+$border-radius:               .375rem;
+$border-radius-sm:            .25rem;
+$border-radius-lg:            .6rem;
+$border-radius-xl:            1rem;
+$border-radius-2xl:           2rem;
+$border-radius-pill:          50rem;
