@@ -1,4 +1,4 @@
-/* Dropdown Toggle Icon
+/* Dropdown Toggle Icon && Hover Effects
 ========================================================================= */
 
 .dropdown-toggle::after {
@@ -8,4 +8,42 @@
     vertical-align: bottom;
     padding-right: 6px;
     border: none
+}
+
+.dropdown-item {
+
+    transition: all 0.3s ease;
+
+    p {
+        transition: all 0.3s ease;
+    }
+
+    i {
+        font-size: 12px;
+        transition: color 0.3s ease;
+    }
+
+    &:hover {
+
+        p {
+            color: black !important;
+            &.hover-margin {
+                margin-right: 1em;
+            }
+        }
+
+        i {
+            visibility: visible !important;
+            &.to-primary {
+                color: #0043A4 !important;
+            }
+            &.to-secondary {
+                color: #01A686 !important;
+            }
+            &.to-danger {
+                color: #FF0000 !important;
+            }
+        }
+    }
+
 }
