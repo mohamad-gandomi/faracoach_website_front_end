@@ -94,8 +94,14 @@ export default {
 
     // Inject styles and scripts into the HTML
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: path.resolve(process.cwd(), "index.html")
-    })
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'index-logout.html',
+      template: path.resolve(process.cwd(), "index-logout.html")
+    }),
+
   ],
 
   // Configure the "webpack-dev-server" plugin
@@ -104,7 +110,7 @@ export default {
       directory: path.resolve(process.cwd(), "public")
     },
     watchFiles: [
-      path.resolve(process.cwd(), "index.html")
+      path.resolve(process.cwd(), "index-logout.html")
     ],
     compress: true,
     port: process.env.PORT || 9090,
