@@ -1,6 +1,9 @@
 // Load Styles
 import '../scss/main.scss';
 
+// Load Custom js
+import './custom.js';
+
 // Load Bootstrap init
 import {initBootstrap} from "./bootstrap.js";
 
