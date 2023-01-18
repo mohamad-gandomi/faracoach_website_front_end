@@ -4,7 +4,8 @@
 //
 //    1. Colors
 //    2. Text Colors
-//    2. Background Colors
+//    3. Background Colors
+//    4. Margin
 //
 //---------------------------------------------
 
@@ -13,13 +14,18 @@
 //---------------------------------------------
 
 $custom-colors: (
-  "c6"   :   #c6c6c6,
-  "fa"   :   #fafafa,
-  "9f"   :   #9f9f9f,
-  "ae"   :   #aeaeae,
-  "cb"   :   #cbcbcb,
-  "lp"   :   #CCD9ED,
-  "ls"   :   #01a6854f,
+  "c6"     :   #c6c6c6,
+  "fa"     :   #fafafa,
+  "9f"     :   #9f9f9f,
+  "ae"     :   #aeaeae,
+  "cb"     :   #cbcbcb,
+  "lp"     :   #CCD9ED,
+  "ls"     :   #01a6854f,
+  "footer" :   #050030,
+  "db"     :   #040A41,
+  "lb"     :   #4691FC,
+  "dg"     :   #04193D,
+  "lg"     :   #01A686,
 );
 
 //---------------------------------------------
@@ -41,7 +47,7 @@ $utilities: map-merge(
 );
 
 //---------------------------------------------
-// 2. Background Colors
+// 3. Background Colors
 //---------------------------------------------
 
 $utilities: map-merge(
@@ -54,6 +60,25 @@ $utilities: map-merge(
         $theme-colors,
         $custom-colors,
       )
+    ),
+  )
+);
+
+//---------------------------------------------
+// 3. Margin
+//---------------------------------------------
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "margin-bottom": map-merge(
+      map-get($utilities, "margin-bottom"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "margin-bottom"), "values"),
+          (6: 9rem),
+        ),
+      ),
     ),
   )
 );
