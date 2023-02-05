@@ -99,3 +99,87 @@ footer {
         }
     }
 }
+
+/* Main Page Welcome
+========================================================================= */
+
+.main-welcome {
+    width:100%;
+    min-height:800px;
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+
+    &__title {
+        max-width: 675px;
+
+        &__btn {
+            width: 315px;
+            height: 64px;
+            &--hover {
+                display: inline-flex;
+                align-items: center;
+                width: 65px;
+                background-color: none;
+                overflow: hidden;
+                transition: all 0.5s ease;
+                span {
+                    display: block;
+                    white-space: nowrap;
+                    width: 0;
+                }
+                &:hover {
+                    width: 215px;
+                    background-color: white;
+                    span {
+                        width: auto;
+                    }
+                }
+            }
+            img {
+                padding: 17px;
+                border-radius: 50%;
+                background-color: #01a6854f;
+                outline: 5px solid rgba(255, 255, 255, 0.07);
+                margin: 0 5px;
+            }
+        }
+    }
+
+    &__counter {
+        max-width: 675px;
+    }
+
+    &__testimonial {
+        position: absolute;
+        left: 8%;
+        top: 48%;
+        width: 270px;
+
+        &__content {
+            background: rgba(0, 67, 164, 0.3);
+            backdrop-filter: blur(25px);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 51px;
+        }
+    }
+
+}
+
+.main-search {
+    max-width: 675px;
+    margin: 0 auto;
+    padding: 24px;
+    border-radius: 10px;
+    margin-top: -68px;
+    position: relative;
+
+    &__text {
+        span,input {
+            background: none !important;
+        }
+        box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.05);
+    }
+}
