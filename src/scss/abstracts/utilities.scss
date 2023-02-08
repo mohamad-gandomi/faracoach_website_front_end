@@ -31,6 +31,7 @@ $custom-colors: (
   "84"     :   #848484,
   "41"     :   #414141,
   "f8"     :   #F8F8F8,
+  "0D"     :    #0D216D
 );
 $theme-colors: map-merge( $custom-colors ,$theme-colors );
 
@@ -83,6 +84,21 @@ $utilities: map-merge(
         values: map-merge(
           map-get(map-get($utilities, "margin-bottom"), "values"),
           (6: 9rem, 7: 12rem, 8: 15rem),
+        ),
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "padding": map-merge(
+      map-get($utilities, "padding"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "padding"), "values"),
+          (6: 3.75rem),
         ),
       ),
     ),
