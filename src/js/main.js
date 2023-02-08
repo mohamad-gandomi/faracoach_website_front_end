@@ -1,3 +1,6 @@
+// Load Libs
+import "./swiper.js"
+
 // Load Styles
 import '../scss/main.scss';
 

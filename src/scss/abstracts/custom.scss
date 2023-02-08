@@ -153,7 +153,7 @@ footer {
 
     &__testimonial {
         position: absolute;
-        left: 8%;
+        left: 9%;
         top: 48%;
         width: 270px;
 
@@ -182,4 +182,98 @@ footer {
         }
         box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.05);
     }
+}
+
+/* Main Page Courses Carousel
+========================================================================= */
+
+.bottom-line {
+    width: 42px;
+    height: 4px;
+}
+
+.courses-carousel {
+
+    &__top {
+        position: relative;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #0d206d86;  
+    }
+
+    &__link {
+        &:hover {
+            .courses-carousel__overlay {
+                opacity: 1;
+            }
+            img {
+                filter: blur(6px);
+            }
+        }
+    }
+
+    &__next-btn {
+        position: absolute;
+        left: -80px;
+        top: 50%;
+        width: unset;
+        z-index: 9;
+    }
+    
+
+
+}
+
+
+/* Show More Button
+========================================================================= */
+
+.showmore {
+
+    &__icon {
+        &:before {
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0;
+            margin-right: 0;
+            transition: all 0.4s ease;
+        }
+    }
+    
+    &:hover {
+        i:before {
+            width: 20px;
+            margin-right: 10px;
+        }     
+    }
+
+}
+
+/* Section Title
+========================================================================= */
+
+.section-title {
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.section-title:hover {
+    color: #0043A4 !important;
 }

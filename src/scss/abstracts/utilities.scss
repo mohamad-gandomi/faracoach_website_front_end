@@ -17,6 +17,7 @@ $custom-colors: (
   "c6"     :   #c6c6c6,
   "fa"     :   #fafafa,
   "9f"     :   #9f9f9f,
+  "d9"     :   #d9d9d9,
   "ae"     :   #aeaeae,
   "cb"     :   #cbcbcb,
   "lp"     :   #CCD9ED,
@@ -26,7 +27,10 @@ $custom-colors: (
   "lb"     :   #4691FC,
   "dg"     :   #04193D,
   "lg"     :   #01A686,
-  "dp"     :   #3962D1
+  "dp"     :   #3962D1,
+  "84"     :   #848484,
+  "41"     :   #414141,
+  "f8"     :   #F8F8F8,
 );
 $theme-colors: map-merge( $custom-colors ,$theme-colors );
 
@@ -78,7 +82,7 @@ $utilities: map-merge(
       (
         values: map-merge(
           map-get(map-get($utilities, "margin-bottom"), "values"),
-          (6: 9rem),
+          (6: 9rem, 7: 12rem, 8: 15rem),
         ),
       ),
     ),
