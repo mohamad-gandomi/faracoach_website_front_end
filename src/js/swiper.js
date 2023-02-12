@@ -5,7 +5,7 @@ import 'swiper/css/bundle';
 // COURSES CAROUSEL
 //======================================================================
 
-const testimonialsSwiper = new Swiper('.courses-carousel', {
+const coursescarousel = new Swiper('.courses-carousel', {
   slidesPerView: 1,
   spaceBetween: 20,
   preventClicks: true,
@@ -15,6 +15,32 @@ const testimonialsSwiper = new Swiper('.courses-carousel', {
 //   },
   navigation: {
     nextEl: '.courses-carousel__next-btn',
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+    },
+  }
+});
+
+//======================================================================
+// COACHES CAROUSEL
+//======================================================================
+
+const coachescarousel = new Swiper('.coaches-carousel', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  preventClicks: true,
+//   speed: 800,
+//   autoplay: {
+//     delay: 3000,
+//   },
+  navigation: {
+    nextEl: '.coaches-carousel__next-btn',
   },
   breakpoints: {
     1200: {
