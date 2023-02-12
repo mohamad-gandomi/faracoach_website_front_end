@@ -398,3 +398,20 @@ footer {
 .section-title:hover {
     color: #0043A4 !important;
 }
+
+/* FAQ
+========================================================================= */
+
+.accordion-button::after {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
