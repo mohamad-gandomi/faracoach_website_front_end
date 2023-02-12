@@ -52,3 +52,25 @@ const coachescarousel = new Swiper('.coaches-carousel', {
     },
   }
 });
+
+//======================================================================
+// EVENTS CAROUSEL
+//======================================================================
+
+const eventscarousel = new Swiper('.events-carousel', {
+  slidesPerView: 1,
+  preventClicks: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.events-carousel__next-btn',
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 1,
+    },
+  }
+});
