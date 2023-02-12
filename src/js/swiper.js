@@ -74,3 +74,26 @@ const eventscarousel = new Swiper('.events-carousel', {
     },
   }
 });
+
+//======================================================================
+// BLOG CAROUSEL
+//======================================================================
+
+const blogcarousel = new Swiper('.blog-carousel', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  preventClicks: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.blog-carousel__next-btn',
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+    },
+  }
+});

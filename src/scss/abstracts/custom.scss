@@ -213,7 +213,7 @@ footer {
         height: 100%;
         width: 100%;
         opacity: 0;
-        transition: .5s ease;
+        transition: all .5s ease;
         background-color: #0d206d86;  
     }
 
@@ -274,6 +274,84 @@ footer {
 /* Main Page Special Events Carousel
 ========================================================================= */
 .events-carousel {
+
+    &__next-btn {
+        position: absolute;
+        left: -80px;
+        top: 50%;
+        width: unset;
+        z-index: 9;
+    }
+}
+
+/* Main Page Blog Carousel
+========================================================================= */
+.blog-carousel {
+
+    &__top {
+        position: relative;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        transition: all .5s ease;
+
+        i {
+            transition: all 0.4s ease;
+            font-size: 50px;
+        }
+
+        h5 {
+            transition: all 0.4s ease;  
+        }
+    }
+
+    &__tags {
+        position: absolute;
+        top: 16px;
+        left: 14px;
+
+        span {
+            background-color: hsla(229, 83%, 60%, 0.5);
+            font-size: 14px;
+            margin-right: 5px;
+            padding: 5px 16px;
+            border-radius: 10px;
+        }
+    }
+
+    &__link {
+        &:hover {
+            .blog-carousel__overlay i {
+                color: #01A686;
+            }
+
+            .blog-carousel__showmore {
+                opacity: 1;
+            }
+
+            h5 {
+                color: #0043A4 !important;
+            }
+        }
+    }
+
+    &__showmore {
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
 
     &__next-btn {
         position: absolute;
