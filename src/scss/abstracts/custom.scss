@@ -399,6 +399,38 @@ footer {
     color: #0043A4 !important;
 }
 
+/* Coaches videos Carousel
+========================================================================= */
+.coachesvideos-carousel {
+    &__container {
+
+        position: relative;
+
+        img {
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+            transition: all 0.4s ease;
+        }
+
+        &__icon {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right:0;
+            margin: auto;
+        }
+
+        &:hover {
+            img {
+                -webkit-filter: grayscale(0);
+                filter: none;
+            }
+        }
+    }
+}
+
 /* Testimonials Carousel
 ========================================================================= */
 .testimonial-carousel {

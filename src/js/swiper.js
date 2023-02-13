@@ -107,6 +107,7 @@ const testimonialcarousel = new Swiper('.testimonial-carousel', {
   spaceBetween: 20,
   preventClicks: true,
   grabCursor: true,
+  loop: true,
   speed: 800,
   autoplay: {
     delay: 3000,
@@ -114,6 +115,33 @@ const testimonialcarousel = new Swiper('.testimonial-carousel', {
   breakpoints: {
     1200: {
       slidesPerView: 5,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    576: {
+      slidesPerView: 2,
+    }
+  }
+});
+
+//======================================================================
+// TESTIMONIAL CAROUSEL
+//======================================================================
+
+const coachesvideoscarousel = new Swiper('.coachesvideos-carousel', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  speed: 800,
+  autoplay: {
+    delay: 3000,
+  },
+  preventClicks: true,
+  grabCursor: true,
+  loop: true,
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
     },
     992: {
       slidesPerView: 3,
