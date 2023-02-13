@@ -97,3 +97,29 @@ const blogcarousel = new Swiper('.blog-carousel', {
     },
   }
 });
+
+//======================================================================
+// TESTIMONIAL CAROUSEL
+//======================================================================
+
+const testimonialcarousel = new Swiper('.testimonial-carousel', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  preventClicks: true,
+  grabCursor: true,
+  speed: 800,
+  autoplay: {
+    delay: 3000,
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 5,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    576: {
+      slidesPerView: 2,
+    }
+  }
+});

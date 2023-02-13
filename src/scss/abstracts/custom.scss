@@ -399,6 +399,39 @@ footer {
     color: #0043A4 !important;
 }
 
+/* Testimonials Carousel
+========================================================================= */
+.testimonial-carousel {
+    &__card {
+        padding: 24px;
+        cursor: pointer;
+        img {
+            mix-blend-mode: luminosity;
+            transition: all 0.4s ease;
+        }
+        h6 {
+            color: #9f9f9f;
+            transition: all 0.4s ease;
+        }
+        p {
+            color: #707070;
+            font-size: 15px;
+            transition: all 0.4s ease;
+        }
+        &:hover {
+            img {
+                mix-blend-mode: unset;
+            }
+            h6 {
+                color: #414141;
+            }
+            p {
+                color: #0043A4;
+            }
+        }
+    }
+}
+
 /* FAQ
 ========================================================================= */
 
