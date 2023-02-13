@@ -126,7 +126,7 @@ const testimonialcarousel = new Swiper('.testimonial-carousel', {
 });
 
 //======================================================================
-// TESTIMONIAL CAROUSEL
+// COACHES VIDEOS CAROUSEL
 //======================================================================
 
 const coachesvideoscarousel = new Swiper('.coachesvideos-carousel', {

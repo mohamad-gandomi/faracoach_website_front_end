@@ -371,7 +371,7 @@
 
             <button type="button" class="main-welcome__title__btn btn btn-dp ms-4">دوره های آکادمی فراکوچ</button>
 
-            <button type="button" class="main-welcome__title__btn main-welcome__title__btn--hover btn rounded-pill p-0 text-secondary">
+            <button type="button" class="main-welcome__title__btn main-welcome__title__btn--hover btn rounded-pill p-0 text-secondary" data-bs-toggle="modal" data-bs-target="#heroModal">
               <img src="images/main/play-icon.svg" alt="">
               <span class="ms-4 me-2">کوچینگ چیست؟</span>
             </button>
@@ -415,6 +415,26 @@
       </div>
 
     </section>
+
+    <!-- Hero Modal -->
+    <div class="modal fade" id="heroModal" tabindex="-1" aria-labelledby="heroModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="heroModalLabel">کوچینگ چیست؟</h5>
+            <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <video controls width="100%">
+              <source src="images/main/sample-video.mp4" type="video/mp4">
+            </video> 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">خروج</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Search -->
     <section class="main-search bg-light shadow-sm mb-5 mb-xxl-8">
@@ -677,11 +697,31 @@
           <div class="col-12 col-xl-6 p-6 bg-0D d-none d-xl-block" style="max-width: 620px; border-top-right-radius: 50%; border-bottom-right-radius: 50%;">
               <div class="bg-light rounded-circle me-auto" style="width: 500px; height: 500px;background-image: url('images/main/about-us-video-bg.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
                   <div class="video d-flex align-items-center justify-content-center" style="height: 500px;">
-                    <a href="#">
-                      <img src="images/main/play-circle.svg" alt="">
+                    <a href="#!">
+                      <img src="images/main/play-circle.svg" alt="" data-bs-toggle="modal" data-bs-target="#aboutUsModal" >
                     </a>
                   </div>
               </div>
+          </div>
+
+          <!-- About Us Modal -->
+          <div class="modal fade" id="aboutUsModal" tabindex="-1" aria-labelledby="aboutUsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="aboutUsModalLabel">معرفی فراکوچ</h5>
+                  <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <video controls width="100%">
+                    <source src="images/main/sample-video.mp4" type="video/mp4">
+                  </video> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">خروج</button>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Content -->
@@ -871,8 +911,14 @@
                 <div class="row px-2 py-4 px-md-5 py-md-5 bg-primary rounded-3">
 
                   <div class="col-lg-4 col-xxl-3 text-light text-center ps-lg-5 d-flex flex-column align-items-center justify-content-between">
-                      <div class="counter mb-4 text-warning border border-2 rounded border-warning fs-3 fw-bold py-4 py-2 w-100" dir="ltr">
-                          ۱۱ : ۲۳ : ۱۷ : ۰۱
+                      <div data-date="April 10, 2023 21:14:01" class="clockdiv counter mb-4 text-warning border border-2 rounded border-warning fs-3 fw-bold py-4 py-2 w-100" dir="ltr">
+                        <span class="days"></span>
+                         : 
+                        <span class="hours"></span>
+                         : 
+                        <span class="minutes"></span>
+                         : 
+                        <span class="seconds"></span>
                       </div>
                       <h2 class="fw-bold mb-4 ">رویـــــــــــــــــــــــــــــداد هـــــــــای ویـــــــــــژه</h2>
                       <a href="" class="btn btn-warning text-light w-100 py-2 mb-4 mb-lg-0">ثبت نام در رویداد</a>
@@ -903,9 +949,15 @@
                 <div class="row px-2 py-4 px-md-5 py-md-5 bg-primary rounded-3">
 
                   <div class="col-lg-4 col-xxl-3 text-light text-center ps-lg-5 d-flex flex-column align-items-center justify-content-between">
-                      <div class="counter mb-4 text-warning border border-2 rounded border-warning fs-3 fw-bold py-4 py-2 w-100" dir="ltr">
-                          ۱۱ : ۲۳ : ۱۷ : ۰۱
-                      </div>
+                    <div data-date="April 28, 2023 21:14:01" class="clockdiv counter mb-4 text-warning border border-2 rounded border-warning fs-3 fw-bold py-4 py-2 w-100" dir="ltr">
+                      <span class="days"></span>
+                       : 
+                      <span class="hours"></span>
+                       : 
+                      <span class="minutes"></span>
+                       : 
+                      <span class="seconds"></span>
+                    </div>
                       <h2 class="fw-bold mb-4 ">رویـــــــــــــــــــــــــــــداد هـــــــــای ویـــــــــــژه</h2>
                       <a href="" class="btn btn-warning text-light w-100 py-2 mb-4 mb-lg-0">ثبت نام در رویداد</a>
                   </div>
@@ -1217,6 +1269,8 @@
     <!-- COACHES VIDEOS
     ================================================== -->
     <section class="mb-4">
+
+      <!-- Slider -->
       <div class="container-fluid">
         <div class="row position-relative">
           <!-- Carousel main container -->
@@ -1227,62 +1281,241 @@
               <div class="swiper-slide">
                 <div class="coachesvideos-carousel__container">
                   <img src="images/main/coaches-videos-02.png" alt="" class="img-fluid">
-                  <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  <a href="#!" data-bs-toggle="modal" data-bs-target="#videomodal0Modal">
+                    <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  </a>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="coachesvideos-carousel__container">
                   <img src="images/main/coaches-videos-03.png" alt="" class="img-fluid">
-                  <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  <a href="#!" data-bs-toggle="modal" data-bs-target="#videomodal1Modal">
+                    <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  </a>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="coachesvideos-carousel__container">
                   <img src="images/main/coaches-videos-04.png" alt="" class="img-fluid">
-                  <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  <a href="#!" data-bs-toggle="modal" data-bs-target="#videomodal2Modal">
+                    <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  </a>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="coachesvideos-carousel__container">
                   <img src="images/main/coaches-videos-05.png" alt="" class="img-fluid">
-                  <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  <a href="#!" data-bs-toggle="modal" data-bs-target="#videomodal3Modal">
+                    <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  </a>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="coachesvideos-carousel__container">
                   <img src="images/main/coaches-videos-02.png" alt="" class="img-fluid">
-                  <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  <a href="#!" data-bs-toggle="modal" data-bs-target="#videomodal4Modal">
+                    <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  </a>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="coachesvideos-carousel__container">
                   <img src="images/main/coaches-videos-03.png" alt="" class="img-fluid">
-                  <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  <a href="#!" data-bs-toggle="modal" data-bs-target="#videomodal5Modal">
+                    <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  </a>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="coachesvideos-carousel__container">
                   <img src="images/main/coaches-videos-04.png" alt="" class="img-fluid">
-                  <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  <a href="#!" data-bs-toggle="modal" data-bs-target="#videomodal6Modal">
+                    <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  </a>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="coachesvideos-carousel__container">
                   <img src="images/main/coaches-videos-05.png" alt="" class="img-fluid">
-                  <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  <a href="#!" data-bs-toggle="modal" data-bs-target="#videomodal7Modal">
+                    <img src="images/main/video-circle.svg" alt="" class="coachesvideos-carousel__container__icon">
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Modals -->
+
+      <!-- Video Modal 0 -->
+      <div class="modal fade" id="videomodal0Modal" tabindex="-1" aria-labelledby="videomodal0ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="videomodal0ModalLabel">معرفی فراکوچ</h5>
+              <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <video controls width="100%">
+                <source src="images/main/sample-video.mp4" type="video/mp4">
+              </video> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">خروج</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Modal 1 -->
+      <div class="modal fade" id="videomodal1Modal" tabindex="-1" aria-labelledby="videomodal1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="videomodal1ModalLabel">معرفی فراکوچ</h5>
+              <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <video controls width="100%">
+                <source src="images/main/sample-video.mp4" type="video/mp4">
+              </video> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">خروج</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Modal 2 -->
+      <div class="modal fade" id="videomodal2Modal" tabindex="-1" aria-labelledby="videomodal2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="videomodal2ModalLabel">معرفی فراکوچ</h5>
+              <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <video controls width="100%">
+                <source src="images/main/sample-video.mp4" type="video/mp4">
+              </video> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">خروج</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Modal 3 -->
+      <div class="modal fade" id="videomodal3Modal" tabindex="-1" aria-labelledby="videomodal3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="videomodal3ModalLabel">معرفی فراکوچ</h5>
+              <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <video controls width="100%">
+                <source src="images/main/sample-video.mp4" type="video/mp4">
+              </video> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">خروج</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Modal 4 -->
+      <div class="modal fade" id="videomodal4Modal" tabindex="-1" aria-labelledby="videomodal4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="videomodal4ModalLabel">معرفی فراکوچ</h5>
+              <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <video controls width="100%">
+                <source src="images/main/sample-video.mp4" type="video/mp4">
+              </video> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">خروج</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Modal 5 -->
+      <div class="modal fade" id="videomodal5Modal" tabindex="-1" aria-labelledby="videomodal5ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="videomodal5ModalLabel">معرفی فراکوچ</h5>
+              <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <video controls width="100%">
+                <source src="images/main/sample-video.mp4" type="video/mp4">
+              </video> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">خروج</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Modal 6 -->
+      <div class="modal fade" id="videomodal6Modal" tabindex="-1" aria-labelledby="videomodal6ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="videomodal6ModalLabel">معرفی فراکوچ</h5>
+              <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <video controls width="100%">
+                <source src="images/main/sample-video.mp4" type="video/mp4">
+              </video> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">خروج</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Modal 7 -->
+      <div class="modal fade" id="videomodal7Modal" tabindex="-1" aria-labelledby="videomodal7ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="videomodal7ModalLabel">معرفی فراکوچ</h5>
+              <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <video controls width="100%">
+                <source src="images/main/sample-video.mp4" type="video/mp4">
+              </video> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">خروج</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- TESTIMONIALS
