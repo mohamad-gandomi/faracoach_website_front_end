@@ -500,6 +500,14 @@ footer {
 
 }
 
+@media (min-width: 576px) {
+    .special-offres {
+        &__info {
+            background-color: #f8f8f8;
+        }
+    }
+}
+
 .special-offres {
 
     &__carousel {
