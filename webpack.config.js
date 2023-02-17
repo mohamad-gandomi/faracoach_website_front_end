@@ -101,6 +101,10 @@ export default {
       filename: 'index-logout.html',
       template: path.resolve(process.cwd(), "index-logout.html")
     }),
+    new HtmlWebpackPlugin({
+      filename: 'list-of-courses.html',
+      template: path.resolve(process.cwd(), "list-of-courses.html")
+    }),
 
   ],
 
@@ -110,7 +114,7 @@ export default {
       directory: path.resolve(process.cwd(), "public")
     },
     watchFiles: [
-      path.resolve(process.cwd(), "index.html")
+      path.resolve(process.cwd(), "list-of-courses.html")
     ],
     compress: true,
     port: process.env.PORT || 9090,

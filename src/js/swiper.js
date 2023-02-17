@@ -151,3 +151,23 @@ const coachesvideoscarousel = new Swiper('.coachesvideos-carousel', {
     }
   }
 });
+
+//======================================================================
+// SPECIALS OFFERS CAROUSEL
+//======================================================================
+
+const specialsofferscarousel = new Swiper('.special-offres__carousel', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  // speed: 800,
+  // autoplay: {
+  //   delay: 3000,
+  // },
+  navigation: {
+    nextEl: '.special-offres__next-btn',
+  },
+  preventClicks: true,
+  grabCursor: true,
+  loop: true,
+
+});
