@@ -721,3 +721,16 @@ footer {
         }
     }
 }
+
+/* Aside
+========================================================================= */
+.form-check {
+    padding-right: 1.5em;
+    padding-left: 0;
+}
+
+.form-check .form-check-input {
+    float: right;
+    margin-right: -1.5em;
+    margin-left: 0;
+}
