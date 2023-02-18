@@ -31,7 +31,8 @@ $custom-colors: (
   "84"     :   #848484,
   "41"     :   #414141,
   "f8"     :   #F8F8F8,
-  "0D"     :    #0D216D
+  "0D"     :   #0D216D,
+  "70"     :   #707070,
 );
 $theme-colors: map-merge( $custom-colors ,$theme-colors );
 
