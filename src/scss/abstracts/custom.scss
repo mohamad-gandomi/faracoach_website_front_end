@@ -466,15 +466,18 @@ footer {
 
 /* FAQ
 ========================================================================= */
+.main-page-faq {
+    .accordion-button:not(.collapsed) {
+        background-color: white !important;
+    }
+}
 
 .accordion-button::after {
     margin-left: 0;
     margin-right: auto;
 }
 
-.accordion-button:not(.collapsed) {
-    background-color: white !important;
-}
+
 
 .accordion-button:focus {
     outline: none;
@@ -733,4 +736,172 @@ footer {
     float: right;
     margin-right: -1.5em;
     margin-left: 0;
+}
+
+/* Description Collapse
+========================================================================= */
+
+.fade-show-more {
+    position: relative;
+
+    &__overlay {
+        opacity: 1;
+        transition: all .3s ease;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-image: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9093838218881303) 45%);
+    }
+
+    .collapse {
+        display: block;
+        height: 320px;
+        overflow: hidden;
+    }
+
+    .collapse:not(.show) + a {
+        .show { display: none;}
+        .isax-arrow-up-2 { display: none !important;}
+    }
+
+    .collapsing {
+        height: 320px;
+    }
+
+    .collapsing + a {
+        .show { display: none;}
+        .isax-arrow-up-2 { display: none !important;}
+    }
+
+    .collapse.show {
+        height: auto;
+        .fade-show-more__overlay {
+            opacity: 0;
+        }
+    }
+
+    .collapse.show + a {
+        .hide {
+            display: none;
+        }
+        .isax-arrow-down-1 {
+            display: none !important;
+        }
+    }
+
+    p {
+        line-height: 50px;
+    }
+
+    a {
+        z-index: 2;
+    }
+}
+
+/* Course Coaches
+========================================================================= */
+
+.course-coache {
+
+    h3 {
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        h3 {
+            color: #0043A4;
+        }
+    }
+
+    &__link {
+        &:hover {
+            .course-coache__top__overlay {
+                opacity: 1;
+            }
+            img {
+                filter: blur(6px);
+            }
+        }
+    }
+
+    &__top {
+
+        position: relative;
+        border: 11px solid rgba(57, 98, 209, 0.3);
+        outline: 15px solid rgba(57, 98, 209, 0.1);
+        border-radius: 50%;
+
+        &__img {
+            overflow: hidden;
+        }
+
+        &__overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: all .5s ease;
+            background-color: #0d206d86;
+            border-radius: 50%;  
+        }
+    }
+}
+
+/* Students Testimonials
+========================================================================= */
+.studentstestimonials-carousel {
+    &__container {
+
+        position: relative;
+
+        img {
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+            transition: all 0.4s ease;
+        }
+
+        &__icon {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right:0;
+            margin: auto;
+        }
+
+        &:hover {
+            img {
+                -webkit-filter: grayscale(0);
+                filter: none;
+            }
+        }
+    }
+}
+
+.studentstestimonials {
+    &__next-btn {
+        position: absolute;
+        left: -80px;
+        top: 50%;
+        width: unset;
+        z-index: 9;
+    }
+
+
+}
+
+@media only screen and (max-width:1550px) {
+    .studentstestimonials {
+        &__next-btn {
+            display: none !important;
+        }
+    }
 }

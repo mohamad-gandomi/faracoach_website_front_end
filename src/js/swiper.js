@@ -171,3 +171,27 @@ const specialsofferscarousel = new Swiper('.special-offres__carousel', {
   loop: true,
 
 });
+
+//======================================================================
+// STUDENTS TESTIMONIALS CAROUSEL
+//======================================================================
+
+const studentstestimonialscarousel = new Swiper('.studentstestimonials-carousel', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  speed: 800,
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
+    nextEl: '.studentstestimonials__next-btn',
+  },
+  preventClicks: true,
+  grabCursor: true,
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    }
+  }
+});
