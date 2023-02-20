@@ -905,3 +905,156 @@ footer {
         }
     }
 }
+
+
+/* LIST OF COACHES
+========================================================================= */
+
+/* WELCOME
+========================================================================= */
+
+@media only screen and (max-width:1400px) {
+    .list-of-coaches-welcome {
+        background-position: center top !important;
+    }   
+}
+
+.list-of-coaches-welcome {
+
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left top;
+
+   .row {
+        min-height: 650px;
+   }
+
+   &__title {
+    max-width: 675px;
+
+    &__btn {
+        width: 315px;
+        height: 64px;
+        &--hover {
+            display: inline-flex;
+            align-items: center;
+            width: 65px;
+            background-color: none;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            span {
+                display: block;
+                white-space: nowrap;
+                width: 0;
+            }
+            &:hover {
+                width: 215px;
+                background-color: white;
+                span {
+                    width: auto;
+                }
+            }
+        }
+        img {
+            padding: 17px;
+            border-radius: 50%;
+            background-color: #01a6854f;
+            outline: 5px solid rgba(255, 255, 255, 0.07);
+            margin: 0 5px;
+        }
+    }
+}
+
+   .main-search__text {
+
+        border-top-left-radius: 26px;
+        border-bottom-left-radius: 26px;
+        border-top-right-radius: 26px;
+        border-bottom-right-radius: 26px; 
+        max-width: 460px;
+
+        input {
+            padding: 14px;
+            padding-right: 0;
+            background: #fafafa !important;
+            border-top-left-radius: 26px;
+            border-bottom-left-radius: 26px; 
+        }
+
+        span {
+            background: #fafafa !important;
+            border-top-right-radius: 26px;
+            border-bottom-right-radius: 26px;
+            padding-right: 20px;
+            font-size: 25px;
+        }
+   }
+
+   .float-one {
+        position: absolute;
+        top: 10%;
+        right: 15%;
+        animation-name: float-one;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        width: clamp(35px, 3.854vw, 74px);
+   }
+
+    @keyframes float-one {
+        50% {
+            transform: translateY(10px);
+        }
+    }
+
+    .float-two {
+        position: absolute;
+        top: 60%;
+        right: 5%;
+        animation-name: float-two;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        width: clamp(30px, 2.708vw, 52px);
+   }
+
+    @keyframes float-two {
+        0%   {transform: translateY(-5px)}
+        25%  {transform: translateX(5px)}
+        50%  {transform: translateY(5px)}
+        75%  {transform: translateX(-5px)}
+        100% {transform: translateY(-5px)}
+    }
+
+    .float-three {
+        position: absolute;
+        top: 27%;
+        left: 20%;
+        animation-name: float-three;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        width: clamp(40px, 5vw, 96px);
+   }
+
+    @keyframes float-three {
+        0%   {transform: translateY(3px)}
+        25%  {transform: translateX(-3px)}
+        50%  {transform: translateY(-3px)}
+        75%  {transform: translateX(3px)}
+        100% {transform: translateY(3px)}
+    }
+
+    .float-four {
+        position: absolute;
+        top: 70%;
+        left: 10%;
+        animation-name: float-four;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        width: clamp(38px, 4.688vw, 90px);
+   }
+
+    @keyframes float-four {
+        50%  {transform: translateX(8px)}
+    }
+
+}
