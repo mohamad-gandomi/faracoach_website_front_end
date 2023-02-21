@@ -1095,3 +1095,48 @@ footer {
         box-shadow: none;
     }
 }
+
+/* LIST OF COACHES
+========================================================================= */
+
+.coach {
+
+    &__top {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: all .5s ease;
+        background-color: rgba(13, 33, 109, 0.5); 
+    }
+
+    &__link {
+        &:hover {
+            .coach__overlay {
+                opacity: 1;
+            }
+            .coach__img {
+                filter: blur(6px);
+            }
+        }
+    }
+
+    &__score {
+        background-color: rgba(0, 67, 164, 0.1);;
+    }
+}
