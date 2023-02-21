@@ -1058,3 +1058,40 @@ footer {
     }
 
 }
+
+/* FILTERS
+========================================================================= */
+.list-of-coaches-filters {
+
+    .accordion-button.collapsed::after {
+        background-image: url("../../images/list_of_coaches/arrow-down.svg");
+    }
+
+    .accordion-button::after {
+        background-image: url("../../images/list_of_coaches/arrow-down.svg");
+    }
+
+    .form-check-label {
+        color: #414141;
+        font-size: 15px;
+    }
+
+    .form-check-input {
+        width: 24px;
+        height: 24px;
+        border-radius: 7px;
+    }
+
+    .form-check-input:checked[type="checkbox"] {
+        background-image: url("../../images/list_of_coaches/check.svg");
+        background-color: #f8f8f8 !important;
+        border-color: #aeaeae;
+        background-size: auto;
+    }
+
+    .form-check-input:focus {
+        border-color: #aeaeae;
+        outline: 0;
+        box-shadow: none;
+    }
+}

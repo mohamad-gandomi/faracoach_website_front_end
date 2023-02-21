@@ -352,81 +352,243 @@
         </nav>
     </header>
 
-    <!-- MAIN
+    <!-- HERO
     ================================================== -->
-    <main>
+    <section class="list-of-coaches-welcome mb-5" style="background-image: url('imaes/list_of_coaches/hero-background.png')">
+        <div class="container">
+            <div class="row flex-xl-row-reverse align-items-center">
 
-        <!-- HERO
-        ================================================== -->
-        <section class="list-of-coaches-welcome mb-6" style="background-image: url('imaes/list_of_coaches/hero-background.png')">
-            <div class="container">
-                <div class="row flex-xl-row-reverse align-items-center">
+                <!-- Floating Images -->
+                <div class="col-12 col-xl-6 mb-5 mb-xl-0 text-center text-xl-start position-relative ">
+                    <img src="images/list_of_coaches/hero-group.png" class="img-fluid" alt="">
+                    <img src="images/list_of_coaches/floating-images-01.png" class="float-one" alt="">
+                    <img src="images/list_of_coaches/floating-images-03.png" class="float-two" alt="">
+                    <img src="images/list_of_coaches/floating-images-02.png" class="float-three" alt="">
+                    <img src="images/list_of_coaches/floating-images-04.png" class="float-four" alt="">
+                </div>
 
-                    <!-- Floating Images -->
-                    <div class="col-12 col-xl-6 mb-5 mb-xl-0 text-center text-xl-start position-relative ">
-                        <img src="images/list_of_coaches/hero-group.png" class="img-fluid" alt="">
-                        <img src="images/list_of_coaches/floating-images-01.png" class="float-one" alt="">
-                        <img src="images/list_of_coaches/floating-images-03.png" class="float-two" alt="">
-                        <img src="images/list_of_coaches/floating-images-02.png" class="float-three" alt="">
-                        <img src="images/list_of_coaches/floating-images-04.png" class="float-four" alt="">
-                    </div>
+                <!-- Page Title -->
+                <div class="col-12 col-xl-6 d-flex justify-content-end">
+                    <div class="list-of-coaches-welcome__title">
 
-                    <!-- Page Title -->
-                    <div class="col-12 col-xl-6 d-flex justify-content-end">
-                        <div class="list-of-coaches-welcome__title">
+                        <!-- Title -->
+                        <h1 class="fw-bold mb-4">کوچ مد نظر خودتان را رزرو کنید</h1>
 
-                            <!-- Title -->
-                            <h1 class="fw-bold mb-4">کوچ مد نظر خودتان را رزرو کنید</h1>
+                        <!-- Sub Title -->
+                        <p class="lh-lg mb-4">ILO  معتبرترین مدرک ملی کوچینگ با اعتبار بین المللی زیر نظر سازمان فنیو حرفه ای کشور و سازمان جهانی</p>
 
-                            <!-- Sub Title -->
-                            <p class="lh-lg mb-4">ILO  معتبرترین مدرک ملی کوچینگ با اعتبار بین المللی زیر نظر سازمان فنیو حرفه ای کشور و سازمان جهانی</p>
+                        <!-- Buttons -->
+                        <button type="button" class="list-of-coaches-welcome__title__btn btn btn-primary ms-4 rounded-3">قوانین و ضوابط</button>
+                        <button type="button" class="list-of-coaches-welcome__title__btn list-of-coaches-welcome__title__btn--hover btn rounded-pill p-0 text-secondary" data-bs-toggle="modal" data-bs-target="#heroModal">
+                          <img src="images/main/play-icon.svg" alt="">
+                          <span class="ms-4 me-2">کوچینگ چیست؟</span>
+                        </button>
 
-                            <!-- Buttons -->
-                            <button type="button" class="list-of-coaches-welcome__title__btn btn btn-primary ms-4 rounded-3">قوانین و ضوابط</button>
-                            <button type="button" class="list-of-coaches-welcome__title__btn list-of-coaches-welcome__title__btn--hover btn rounded-pill p-0 text-secondary" data-bs-toggle="modal" data-bs-target="#heroModal">
-                              <img src="images/main/play-icon.svg" alt="">
-                              <span class="ms-4 me-2">کوچینگ چیست؟</span>
-                            </button>
-
-                            <!-- Hero Modal -->
-                            <div class="modal fade" id="heroModal" tabindex="-1" aria-labelledby="heroModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="heroModalLabel">کوچینگ چیست؟</h5>
-                                    <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body text-center">
-                                    <video controls width="100%">
-                                        <source src="images/main/sample-video.mp4" type="video/mp4">
-                                    </video> 
-                                    </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">خروج</button>
-                                    </div>
+                        <!-- Hero Modal -->
+                        <div class="modal fade" id="heroModal" tabindex="-1" aria-labelledby="heroModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="heroModalLabel">کوچینگ چیست؟</h5>
+                                <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
+                                <div class="modal-body text-center">
+                                <video controls width="100%">
+                                    <source src="images/main/sample-video.mp4" type="video/mp4">
+                                </video> 
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">خروج</button>
                                 </div>
                             </div>
-
-                            <!-- Search Input -->
-                            <form action="">
-                                <div class="main-search__text input-group flex-row-reverse mt-4 shadow-sm">
-                                    <input type="text" class="form-control border-0" placeholder="جستجو کوچ" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                                    <span class="input-group-text border-0" id="button-addon1"><i class="isax isax-search-normal-1 text-cb"></i></span>
-                                </div>
-                            </form>
-
+                            </div>
                         </div>
+
+                        <!-- Search Input -->
+                        <form action="">
+                            <div class="main-search__text input-group flex-row-reverse mt-4 shadow-sm">
+                                <input type="text" class="form-control border-0" placeholder="جستجو کوچ" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                <span class="input-group-text border-0" id="button-addon1"><i class="isax isax-search-normal-1 text-cb"></i></span>
+                            </div>
+                        </form>
+
                     </div>
-
                 </div>
+
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- HERO
-        ================================================== -->
 
-    </main>
+    <div class="container">
+        <div class="row flex-xl-row-reverse">
+
+            <!-- MAIN
+            ================================================== -->
+            <main class="col-12 col-xl-9">
+
+            </main>
+
+            <!-- ASIDE
+            ================================================== -->
+            <aside class="col-12 col-xl-3 mb-5">
+
+                <!-- Filters -->
+                <form action="" class="list-of-coaches-filters">
+                    <div class="accordion bg-f8 py-3 rounded-3" id="listOfCoachesFilters">
+
+                        <!-- Coaching Type Filter -->
+                        <div class="accordion-item border-0">
+
+                            <h2 class="accordion-header" id="coachingTypeFilterHeading">
+                                <button class="accordion-button bg-f8 text-ae fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#coachingTypeFilter" aria-expanded="true" aria-controls="coachingTypeFilter">
+                                    نوع کوچینگ
+                                </button>
+                            </h2>
+                            
+                            <div id="coachingTypeFilter" class="accordion-collapse collapse show bg-f8" aria-labelledby="coachingTypeFilterHeading">
+                                <div class="accordion-body">
+
+                                    <div class="form-check mb-3 border-bottom pb-3">
+                                        <input class="form-check-input ms-2" type="checkbox" value="" id="one">
+                                        <label class="form-check-label user-select-none p-1" for="one">
+                                            لایف کوچینگ
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check mb-3 border-bottom pb-3">
+                                        <input class="form-check-input ms-2" type="checkbox" value="" id="two">
+                                        <label class="form-check-label user-select-none p-1" for="two">
+                                            بیزینس کوچینگ
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                         <!-- Coaching Subject Filter -->
+                         <div class="accordion-item border-0">
+
+                            <h2 class="accordion-header" id="coachingSubjectFilterHeading">
+                                <button class="accordion-button bg-f8 text-ae fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#coachingSubjectFilter" aria-expanded="true" aria-controls="coachingSubjectFilter">
+                                    موضوع کوچینگ
+                                </button>
+                            </h2>
+                            
+                            <div id="coachingSubjectFilter" class="accordion-collapse collapse show bg-f8" aria-labelledby="coachingSubjectFilterHeading">
+                                <div class="accordion-body">
+
+                                    <div class="form-check mb-3 border-bottom pb-3">
+                                        <input class="form-check-input ms-2" type="checkbox" value="" id="three">
+                                        <label class="form-check-label user-select-none p-1" for="three">
+                                            کوچ اچرائی
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check mb-3 border-bottom pb-3">
+                                        <input class="form-check-input ms-2" type="checkbox" value="" id="four">
+                                        <label class="form-check-label user-select-none p-1" for="four">
+                                            کوچ استعداد یابی
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check mb-3 border-bottom pb-3">
+                                        <input class="form-check-input ms-2" type="checkbox" value="" id="five">
+                                        <label class="form-check-label user-select-none p-1" for="five">
+                                            کوچ توسعه فردی
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check mb-3 border-bottom pb-3">
+                                        <input class="form-check-input ms-2" type="checkbox" value="" id="six">
+                                        <label class="form-check-label user-select-none p-1" for="six">
+                                            کوچ کسب و کار
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check mb-3 border-bottom pb-3">
+                                        <input class="form-check-input ms-2" type="checkbox" value="" id="seven">
+                                        <label class="form-check-label user-select-none p-1" for="seven">
+                                            کوچ رهبری
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!-- Gender Filter -->
+                        <div class="accordion-item border-0">
+
+                            <h2 class="accordion-header" id="coachingGenderFilterHeading">
+                                <button class="accordion-button bg-f8 text-ae fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#coachingGenderFilter" aria-expanded="true" aria-controls="coachingGenderFilter">
+                                    جنسیت
+                                </button>
+                            </h2>
+                        
+                            <div id="coachingGenderFilter" class="accordion-collapse collapse show bg-f8" aria-labelledby="coachingGenderFilterHeading">
+                                <div class="accordion-body">
+
+                                    <div class="form-check mb-3 border-bottom pb-3">
+                                        <input class="form-check-input ms-2" type="checkbox" value="" id="eight">
+                                        <label class="form-check-label user-select-none p-1" for="eight">
+                                            مرد
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check mb-3 border-bottom pb-3">
+                                        <input class="form-check-input ms-2" type="checkbox" value="" id="nine">
+                                        <label class="form-check-label user-select-none p-1" for="nine">
+                                            زن
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                        <!-- Class Type Filter -->
+                        <div class="accordion-item border-0">
+
+                            <h2 class="accordion-header" id="coachingClassTypeFilterHeading">
+                                <button class="accordion-button bg-f8 text-ae fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#coachingClassTypeFilter" aria-expanded="true" aria-controls="coachingClassTypeFilter">
+                                    جنسیت
+                                </button>
+                            </h2>
+                        
+                            <div id="coachingClassTypeFilter" class="accordion-collapse collapse show bg-f8" aria-labelledby="coachingClassTypeFilterHeading">
+                                <div class="accordion-body">
+
+                                    <div class="form-check mb-3 border-bottom pb-3">
+                                        <input class="form-check-input ms-2" type="checkbox" value="" id="ten">
+                                        <label class="form-check-label user-select-none p-1" for="ten">
+                                            حضوری
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check mb-3 border-bottom pb-3">
+                                        <input class="form-check-input ms-2" type="checkbox" value="" id="eleven">
+                                        <label class="form-check-label user-select-none p-1" for="eleven">
+                                            آنلاین
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                </form>
+
+            </aside>
+
+        </div>
+    </div>
 
     <!-- FOOTER
     ================================================== -->
