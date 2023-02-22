@@ -1,5 +1,6 @@
 // Load Libs
 import "./swiper.js"
+import "./persian-datepicker.js"
 
 // Load Styles
 import '../scss/main.scss';

@@ -113,6 +113,14 @@ export default {
       filename: 'list-of-coaches.html',
       template: path.resolve(process.cwd(), "list-of-coaches.html")
     }),
+    new HtmlWebpackPlugin({
+      filename: 'list-of-coaches.html',
+      template: path.resolve(process.cwd(), "list-of-coaches.html")
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'single-coach.html',
+      template: path.resolve(process.cwd(), "single-coach.html")
+    }),
 
 
   ],
@@ -123,7 +131,7 @@ export default {
       directory: path.resolve(process.cwd(), "public")
     },
     watchFiles: [
-      path.resolve(process.cwd(), "list-of-coaches.html")
+      path.resolve(process.cwd(), "single-coach.html")
     ],
     compress: true,
     port: process.env.PORT || 9090,

@@ -195,3 +195,21 @@ const studentstestimonialscarousel = new Swiper('.studentstestimonials-carousel'
     }
   }
 });
+
+//======================================================================
+// DATE PICKER CAROUSEL
+//======================================================================
+
+const datePickerCarousel = new Swiper('.faraCoachTimePicker', {
+  slidesPerView: 3,
+  spaceBetween: 5,
+  freeMode: true,
+  navigation: {
+    nextEl: '.faraCoachTimePicker__next-btn',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 5,
+    }
+  }
+});

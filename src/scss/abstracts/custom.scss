@@ -1140,3 +1140,138 @@ footer {
         background-color: rgba(0, 67, 164, 0.1);;
     }
 }
+
+/* SINGLE COACH
+========================================================================= */
+
+/* WELCOME
+========================================================================= */
+
+.single-coach-welcome {
+
+    width:100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__container {
+        min-height:800px;
+    }
+
+    &__datepicker {
+
+        .card {
+            border: 0;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+
+        }
+
+    }
+
+}
+
+.faraCoachDatePicker {
+    .datepicker-plot-area {
+        border: none;
+        box-shadow: none;
+    }
+    .datepicker-plot-area {
+        font-family: 'yekanbakh';
+    }
+    .datepicker-plot-area .datepicker-day-view .table-days td {
+        width: 59px;
+        font-size: 14px;
+        border: 1px solid #D5D4DF;
+    }
+    .datepicker-plot-area .datepicker-day-view .table-days td.today span {
+        background-color: white;
+        color: black;
+    }
+    .datepicker-plot-area .datepicker-day-view .table-days td.selected span,
+    .datepicker-plot-area .datepicker-day-view .table-days td span:hover {
+        background: #01A686;
+        color: white;
+        text-shadow: none;
+    }
+    .datepicker-plot-area .datepicker-day-view .table-days td span.other-month {
+        background: #F2F3F7;
+        color: #D5D4DF;
+    }
+    .datepicker-plot-area .datepicker-day-view .month-grid-box .header .header-row {
+        height: unset;
+    }
+    .datepicker-plot-area .datepicker-day-view .month-grid-box .header .header-row-cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 59px;
+        font-size: 14px;
+    }
+    .datepicker-plot-area .datepicker-day-view .table-days td span {
+        display: flex;
+        height: unset;
+        align-items: center;
+        justify-content: center;
+        padding: 28% 0;
+    }
+    .datepicker-plot-area .datepicker-navigator .pwt-btn-next {
+        float: right;
+    }
+
+    .pwt-btn.pwt-btn-next::after {
+        content: "\e936";
+        font-family: "iconsax" !important;
+        font-size: 18px;
+    }
+
+    .pwt-btn.pwt-btn-prev::after {
+        content: "\e931";
+        font-family: "iconsax" !important;
+        font-size: 18px;
+    }
+
+    .datepicker-plot-area .datepicker-navigator .pwt-btn-switch {
+        direction: ltr;
+        text-align: left;
+        font-size: 22px;
+        font-weight: 700px;
+    }
+
+}
+
+.faraCoachTimePicker {
+
+    .swiper-slide label {
+        height: 60px;
+        padding: 0;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 1px solid #aeaeae;
+        color: #aeaeae;
+        font-weight: bold;
+    }
+
+    .btn-check + .btn:hover,
+    .btn-check:checked + .btn,
+    :not(.btn-check) + .btn:active,
+    .btn:first-child:active,
+    .btn.active, .btn.show {
+        color: #FB5353;
+        background-color: rgba(251, 83, 83, 0.1);
+        border-color: #FB5353;
+    }
+
+    &__next-btn {
+        position: absolute;
+        left: -35px;
+        top: 40%;
+        width: unset;
+        z-index: 9;
+    }
+}
