@@ -121,6 +121,10 @@ export default {
       filename: 'single-coach.html',
       template: path.resolve(process.cwd(), "single-coach.html")
     }),
+    new HtmlWebpackPlugin({
+      filename: 'events.html',
+      template: path.resolve(process.cwd(), "events.html")
+    }),
 
 
   ],
@@ -131,7 +135,7 @@ export default {
       directory: path.resolve(process.cwd(), "public")
     },
     watchFiles: [
-      path.resolve(process.cwd(), "single-coach.html")
+      path.resolve(process.cwd(), "events.html")
     ],
     compress: true,
     port: process.env.PORT || 9090,
