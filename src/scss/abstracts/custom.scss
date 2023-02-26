@@ -1275,3 +1275,69 @@ footer {
         z-index: 9;
     }
 }
+
+/* SINGLE EVENT
+========================================================================= */
+.single-event-welcome {
+
+    width:100%;
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+
+    .row {
+        min-height:800px;
+    }
+
+    &__left-img {
+        min-height: 630px;
+        img {
+            left: -23%;
+        }
+    }
+
+    &__course {
+
+        .card {
+            border: 0;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+
+            h1 {
+                color: #0D216D;
+                margin-bottom: 30px;
+            }
+
+            p {
+                color: #4691FC;
+                margin-bottom: 50px;
+            }
+        }
+
+        &__video {
+            &__icon {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left:0;
+                right:0;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media only screen and ( max-width:1200px) {
+    .single-event-welcome {
+        &__left-img {
+            min-height: unset;
+            img {
+                position: relative !important;
+                left: unset;
+            }
+        }
+    }
+}
