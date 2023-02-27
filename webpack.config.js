@@ -129,6 +129,10 @@ export default {
       filename: 'single-event.html',
       template: path.resolve(process.cwd(), "single-event.html")
     }),
+    new HtmlWebpackPlugin({
+      filename: 'product.html',
+      template: path.resolve(process.cwd(), "product.html")
+    }),
 
 
   ],
@@ -139,7 +143,7 @@ export default {
       directory: path.resolve(process.cwd(), "public")
     },
     watchFiles: [
-      path.resolve(process.cwd(), "single-event.html")
+      path.resolve(process.cwd(), "product.html")
     ],
     compress: true,
     port: process.env.PORT || 9090,

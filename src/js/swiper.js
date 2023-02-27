@@ -166,6 +166,10 @@ const specialsofferscarousel = new Swiper('.special-offres__carousel', {
   navigation: {
     nextEl: '.special-offres__next-btn',
   },
+  pagination: {
+    el: '.special-offres__pagination',
+    clickable: true,
+  },
   preventClicks: true,
   grabCursor: true,
   loop: true,
