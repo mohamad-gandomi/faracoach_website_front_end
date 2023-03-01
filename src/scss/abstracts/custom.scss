@@ -1422,3 +1422,42 @@ footer {
     }
 
 }
+
+/* BLOG
+========================================================================= */
+
+/* Article Categories
+========================================================================= */
+
+.blog-category {
+
+    span {
+        transition: all 0.4s ease;
+    }
+
+    img {
+        border: 4px solid #0043a41a;;
+        border-radius: 50%;
+        transition: all 0.4s ease;
+    }
+
+    &.active {
+        img {
+            border: 4px solid #0043a4cc;;
+            
+        }
+        span {
+            color: #0043A4 !important;
+        }
+    }
+
+    &:hover {
+        img {
+            border: 4px solid #0043a4cc;;
+            
+        }
+        span {
+            color: #0043A4 !important;
+        }
+    }
+}
