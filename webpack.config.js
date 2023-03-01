@@ -141,6 +141,10 @@ export default {
       filename: 'blog.html',
       template: path.resolve(process.cwd(), "blog.html")
     }),
+    new HtmlWebpackPlugin({
+      filename: 'single-blog.html',
+      template: path.resolve(process.cwd(), "single-blog.html")
+    }),
 
 
   ],
@@ -151,7 +155,7 @@ export default {
       directory: path.resolve(process.cwd(), "public")
     },
     watchFiles: [
-      path.resolve(process.cwd(), "blog.html")
+      path.resolve(process.cwd(), "single-blog.html")
     ],
     compress: true,
     port: process.env.PORT || 9090,
