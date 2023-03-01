@@ -155,7 +155,7 @@ export default {
       directory: path.resolve(process.cwd(), "public")
     },
     watchFiles: [
-      path.resolve(process.cwd(), "single-blog.html")
+      path.resolve(process.cwd(), "index-logout.html")
     ],
     compress: true,
     port: process.env.PORT || 9090,
