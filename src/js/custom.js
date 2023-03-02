@@ -4,7 +4,8 @@
 //
 //    1. Toggle Active Class Btn Group
 //    2. Countdown Timer
-//    2. Tab Content
+//    3. Tab Content
+//    4. Show Password Toggle
 //
 //---------------------------------------------
 
@@ -66,7 +67,7 @@ document.addEventListener('readystatechange', event => {
 });
 
 //---------------------------------------------
-// 2. Tab Content
+// 3. Tab Content
 //---------------------------------------------
 
 $(function () {
@@ -86,4 +87,22 @@ $(function () {
     $current.addClass('active-tab');
     $contentlis.hide().eq(index).show();
      });
+});
+
+//---------------------------------------------
+// 4. Show Password Toggle
+//---------------------------------------------
+
+$(".togglePassword").click(function (e) {
+  e.preventDefault();
+  var type = $(this).parent().parent().find(".password").attr("type");
+  if(type == "password"){
+      $(".isax").removeClass('isax-eye');
+      $(".isax").addClass('isax-eye-slash');
+      $(this).parent().parent().find(".password").attr("type","text");
+  }else if(type == "text"){
+    $(".isax").removeClass('isax-eye-slash');
+    $(".isax").addClass('isax-eye');
+      $(this).parent().parent().find(".password").attr("type","password");
+  }
 });

@@ -258,12 +258,13 @@
           </button>
 
           <div class="register-btn-group">
-            <button type="button" class="btn bg-lp text-primary">ورود</button>
-            <button type="button" class="btn bg-lp text-primary active start-0">عضویت</button>
+            <button type="button" class="btn bg-lp text-primary" data-bs-toggle="modal" data-bs-target="#loginModal">ورود</button>
+            <button type="button" class="btn bg-lp text-primary active start-0" data-bs-toggle="modal" data-bs-target="#registerModal" >عضویت</button>
           </div>
         </div>
       </nav>
   </header>
+
   <!-- MAIN
   ================================================== -->
   <main class="mb-5">
@@ -1681,6 +1682,107 @@
     </section>
 
   </main>
+
+  <!-- LOGIN MODAL
+  ================================================== -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body p-0 position-relative">
+          <div class="row g-0">
+
+            <div class="col-12 col-lg-6 bg-f8 p-4 ps-lg-5 rounded-3">
+              <h5 class="fw-bold mb-5" >به فراکوچ خوش آمدید</h5>
+              <form action="" class="d-flex flex-column">
+
+                <input type="text" name="phone-email" placeholder="ایمیل/ شماره همراه" class="form-control rounded-3 text-cb border-0 mb-4" style="font-size:14px; padding: 15px;">
+
+                <div class="input-group mb-3 text-start" dir="ltr">
+                  <span class="input-group-text togglePassword border-0 bg-light" id="">
+                    <i class="isax isax-eye" style="cursor: pointer"></i>
+                  </span>
+                  <input class="form-control password border-0" id="password" type="password" name="password" dir="rtl" placeholder="رمز عبور" style="font-size:14px; padding: 15px;"/>
+                </div>
+
+                <a href="#" class="text-decoration-none text-primary small mb-4 d-block">رمز عبور خود را فراموش کرده‌اید؟</a>
+
+                <div class="mb-5">
+                  <label for="exampleInputEmail1" class="form-label small">ورود با رمز یکبار مصرف</label>
+                  <input type="email" class="form-control border-0" id="exampleInputEmail1" aria-describedby="emailHelp" style="font-size:14px; padding: 15px;">
+                </div>
+
+                <button type="submit" class="btn btn-primary rounded-3 w-100 mt-auto mb-3" style="background: #3962D1;padding: 15px;" >ورود</button>
+                <p class="text-center mb-0 small fw-bold">
+                  <span class="text-dark" > ثبت نام نکرده اید؟ </span>
+                  <a href="" class="text-primary text-decoration-none me-1" data-bs-toggle="modal" data-bs-target="#registerModal">ثبت نام</a>
+                </p>
+
+              </form>
+            </div>
+
+            <div class="col-12 col-lg-6 d-none d-lg-block">
+              <img src="images/main/login.png" alt="" class="img-fluid">
+            </div>
+
+          </div>
+          <img src="images/main/login-icon.png" class="position-absolute top-50 start-50 translate-middle d-none d-lg-block" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- REGISTER MODAL
+  ================================================== -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body p-0 position-relative">
+          <div class="row g-0">
+
+            <div class="col-12 col-lg-6 d-none d-lg-block">
+              <img src="images/main/register.png" alt="" class="img-fluid w-100">
+            </div>
+
+            <div class="col-12 col-lg-6 bg-f8 p-4 pe-lg-5 rounded-3">
+              <h5 class="fw-bold mb-5" >ایجاد حساب کاربری</h5>
+              <form action="" class="d-flex flex-column">
+
+                <input type="text" name="phone-email" placeholder="ایمیل/ شماره همراه" class="form-control rounded-3 text-cb border-0 mb-4" style="font-size:14px; padding: 15px;">
+
+                <div class="input-group mb-3 text-start" dir="ltr">
+                  <span class="input-group-text togglePassword border-0 bg-light" id="">
+                    <i class="isax isax-eye" style="cursor: pointer"></i>
+                  </span>
+                  <input class="form-control password border-0" id="password" type="password" name="password" dir="rtl" placeholder="رمز عبور" style="font-size:14px; padding: 15px;"/>
+                </div>
+
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label small">کد معرف ( اختیاری )</label>
+                  <input type="email" class="form-control border-0" id="exampleInputEmail1" aria-describedby="emailHelp" style="font-size:14px; padding: 15px;">
+                </div>
+
+                <div class="mb-4">
+                  <img src="images/main/info-circle.svg" class="img-fluid" alt="">
+                  <span class="small lh-lg" style="font-size: 12px;">با ورود و یا ثبت نام در فراکوچ شما <a href="#" class="text-decoration-none text-primary" >شرایط و قوانین</a> استفاده از سرویس فراکوچ و <a href="#" class="text-decoration-none text-secondary" >قوانین حریم خصوصی</a> آن را می پذیرید.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary rounded-3 w-100 mt-auto mb-3" style="background: #3962D1;padding: 15px;" >ثبت نام</button>
+                <p class="text-center mb-0 small fw-bold">
+                  <span class="text-dark" >از قبل یک حساب دارید؟</span>
+                  <a href="" class="text-primary text-decoration-none me-1" data-bs-toggle="modal" data-bs-target="#loginModal">ورود</a>
+                </p>
+
+              </form>
+            </div>
+
+          </div>
+          <img src="images/main/register-icon.png" class="position-absolute top-50 start-50 translate-middle d-none d-lg-block ps-3 " alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- FOOTER
